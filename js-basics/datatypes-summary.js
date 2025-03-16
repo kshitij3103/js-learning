@@ -13,3 +13,7 @@ array , objects , functions
 
 
 */
+
+// *****************MEMORY****************
+// stack -> primitive
+//heap -> non primitive
