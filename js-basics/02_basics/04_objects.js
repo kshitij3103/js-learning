@@ -26,5 +26,31 @@ console.log(obj3);
 
  // hasOwnProperty() check if object has this property
 
+//***********************DESTRUCTING OBJECTS******************************
+const course={
+    coursename: "js-basics",
+    courseInstructor : "prof x",
+    price: 999
+}
+const {courseInstructor:instructor} =course
+console.log(instructor);
+
+
+ // JSON API OBJECT {
+    //"name": "hello"
+    //"price" : "free"
+    //"age": "44"
+
+
+
+ //}
+
+
+// array of objects (JSON)  [
+//     {},
+//     {},
+//     {},
+//  ]
+
 
 
