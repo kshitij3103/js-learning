@@ -1,0 +1,41 @@
+<!-- // type, timestamp, defaultPrevented
+// target, toEtement, srcEtement, current Target,
+// clientX, clientY, screenX, screenY
+// altkey, ctrlkey, shiftkey, keyCode -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><img src="https://picsum.photos/200/300" id="1"></li>
+        <li><img src="https://picsum.photos/200/300" id="2"></li>
+        <li><img src="https://picsum.photos/200/300" id="3"></li>
+    </ul>
+    
+</body>
+<script>
+    // document.getElementById('2').addEventListener("click",function(){
+    //     alert("2 clicked")
+    // })
+    document.querySelector('ul').addEventListener('click',function(e){
+        let tag=e.target.tagName;
+        console.log(tag);
+        if(tag==="IMG"){
+            let removed=e.target.parentNode;
+        removed.remove();
+
+        }
+
+        
+    })
+
+</script>
+</html>
